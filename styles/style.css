@@ -29,7 +29,6 @@
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
-
 }
 
 .random:hover {
@@ -39,6 +38,5 @@
 
 /* h3 (name) */
 h3 {
-    font-size: 25px;
-
+    font-size: 40px;
 }
