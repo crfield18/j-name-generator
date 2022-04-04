@@ -8,25 +8,20 @@
     <link href='styles/style.css' rel='stylesheet'>
 </head>
 
-<!-- <body>
-    <h2>Random J-Name Generator</h2>
-    <p id="J-name-function">guiohdjfngv</p>
-    <button onclick=jname()></button>
-    <script type="module" src="js/generator_2.js"></script>
-</body> -->
-
 <body>
     <h2>Random J-Name Generator</h2>
-    <p id="J-name-function">guiohdjfngv</p>
+    <p id="J-name-function"></p>
     <button onclick=jname()></button>
     <script>
+        // function db_length() {
+        //     fetch('js/j-names.json')
+        // }
         function jname() {
-            let rand_int = Math.floor(Math.random() * 929);
+            let rand_int = Math.floor(Math.random() * 929); // 929 is length of 
             var para = document.getElementById("J-name-function")
             fetch('js/j-names.json')
                 .then(response => response.json())
                 .then(data => para.innerHTML = data["j-names"][rand_int])
     }
     </script>
-
 </body>
