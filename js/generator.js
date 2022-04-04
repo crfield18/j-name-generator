@@ -8,5 +8,4 @@ function jname() {
     let rand_int = Math.floor(Math.random() * db_length); // Generate random int between 0 and length of jnames.json
     let rand_name = jnamesdb[rand_int]; // 
     return(rand_int + ': ' + rand_name)
-
 }
