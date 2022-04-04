@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>J-name Generator</title>
+    <title>HAW Name Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='styles/style.css' rel='stylesheet'>
 </head>
@@ -13,13 +13,18 @@
         <img class="logo" src="images/logo-edited.png">
     </div>
 
-    <h2>Random J-Name Generator</h2>
+    <h1>Have A Word Name Generator</h1>
     <h3 id="J-name-function"></h3>
     <button class=random onclick=jname()></button>
     <script>
-        // function db_length() {
+        // function len(){
+        //     var para = document.getElementById("J-name-function")
         //     fetch('js/j-names.json')
+        //         .then(response => response.json())
+        //         .then(data => para.innerHTML = data["j-names"].length)
+        //         .then(console.log(data["j-names"].length))
         // }
+
         function jname() {
             let rand_int = Math.floor(Math.random() * 929); // 929 is length of 
             var para = document.getElementById("J-name-function")
