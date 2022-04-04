@@ -25,9 +25,10 @@
     background-color: rgb(248,66,3);
     border-width: 5px;
     border-color: white;
-    padding: 15px 32px;
+    padding: 1% 2%;
     text-decoration: none;
     display: inline-block;
+    font-size: 25px;
 
 }
 
