@@ -13,8 +13,9 @@
         <img class="logo" src="images/logo-edited.png" alt="Unofficial version of the Have A Word podcast logo">
     </div>
 
-    <h1>Have A Word Name Generator</h1>
+    <h1>Have A Word<br>Name Generator</h1>
     <h3 id="J-name-function"></h3>
+
     <button class=random onclick=jname()>🎲 Randomise 🎲</button>
     <script>
         // function len(){
@@ -26,7 +27,7 @@
         // }
 
         function jname() {
-            let rand_int = Math.floor(Math.random() * 929); // 929 is length of 
+            let rand_int = Math.floor(Math.random() * 929); // 929 is length of names database ()
             var para = document.getElementById("J-name-function")
             fetch('js/j-names.json')
                 .then(response => response.json())
